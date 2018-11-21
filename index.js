@@ -5,6 +5,7 @@ const ArrayList = require('./ArrayList');
 const Stack = require('./Stack');
 const Queue = require('./Queue');
 const BinarySearchTree = require('./BinarySearchTree');
+const Graph = require('./Graph');
 
 console.log('***************** Data Structures *****************');
 console.log('The following are sample, homebrewed datastructures that were built for testing and education purposes.');
@@ -111,6 +112,7 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log('\nBINARY SEARCH TREE');
+console.log('=======================================')
 var bTree = new BinarySearchTree();
 bTree.push(3);
 bTree.push(2);
@@ -133,5 +135,30 @@ bTree.preOrderTraversal();
 
 console.log('\nPost-Order Traversal');
 bTree.postOrderTraversal();
+
+console.log('\nGRAPH');
+console.log('=======================================')
+var g = new Graph();
+var elem0 = g.push(0);
+var elem1 = g.push(1);
+var elem2 = g.push(2);
+var elem3 = g.push(3);
+var elem4 = g.push(4);
+var elem5 = g.push(5);
+elem0.attach(elem1);
+elem0.attach(elem5);
+elem1.attach(elem4);
+elem1.attach(elem3);
+elem2.attach(elem1);
+elem3.attach(elem2);
+elem3.attach(elem4);
+g.print();
+
+console.log('\nBreadth First Search');
+g.bfs();
+
+console.log('\nDepth First Search');
+g.dfs();
+
 
 process.exit(0);
