@@ -125,6 +125,13 @@ bTree.bfs();
 console.log('\nDepth First Search');
 bTree.dfs();
 
+console.log('\nIn-Order Traversal');
+bTree.inOrderTraversal();
 
+console.log('\nPre-Order Traversal');
+bTree.preOrderTraversal();
+
+console.log('\nPost-Order Traversal');
+bTree.postOrderTraversal();
 
 process.exit(0);

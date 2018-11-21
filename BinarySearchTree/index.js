@@ -78,6 +78,42 @@ class BinarySearchTree {
     
     search(this.root);
   }
+  
+  inOrderTraversal() {
+    var visit = (elem) => console.log(elem.value);
+    var traverse = (node) => {
+      if (!node) return;
+      traverse(node.left);
+      visit(node);
+      traverse(node.right);
+    };
+    
+    traverse(this.root);    
+  }
+  
+  preOrderTraversal() {
+    var visit = (elem) => console.log(elem.value);
+    var traverse = (node) => {
+      if (!node) return;
+      visit(node);
+      traverse(node.left);
+      traverse(node.right);
+    };
+    
+    traverse(this.root);    
+  }
+  
+  postOrderTraversal() {
+    var visit = (elem) => console.log(elem.value);
+    var traverse = (node) => {
+      if (!node) return;
+      traverse(node.left);
+      traverse(node.right);
+      visit(node);
+    };
+    
+    traverse(this.root);    
+  }
 }
 
 module.exports = BinarySearchTree;
