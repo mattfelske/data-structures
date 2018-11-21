@@ -4,6 +4,7 @@ const HashTable = require('./HashTable');
 const ArrayList = require('./ArrayList');
 const Stack = require('./Stack');
 const Queue = require('./Queue');
+const BinarySearchTree = require('./BinarySearchTree');
 
 console.log('***************** Data Structures *****************');
 console.log('The following are sample, homebrewed datastructures that were built for testing and education purposes.');
@@ -108,5 +109,22 @@ for (let i = 0; i < 10; i++) {
 for (let i = 0; i < 10; i++) {
   console.log(myQueue.remove())
 }
+
+console.log('\nBINARY SEARCH TREE');
+var bTree = new BinarySearchTree();
+bTree.push(3);
+bTree.push(2);
+bTree.push(4);
+bTree.push(1);
+bTree.push(5);
+bTree.push(1);
+// console.log(bTree.root)
+console.log('\nBreadth First Search');
+bTree.bfs();
+
+console.log('\nDepth First Search');
+bTree.dfs();
+
+
 
 process.exit(0);
