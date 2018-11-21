@@ -1,0 +1,23 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "Sample data structure solutions. Initially in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattfelske/data-structures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattfelske/data-structures/issues"
+  },
+  "homepage": "https://github.com/mattfelske/data-structures#readme",
+  "dependencies": {
+    "string-hash": "^1.1.3"
+  }
+}
